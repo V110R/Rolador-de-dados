@@ -13,7 +13,7 @@ if sys.platform == "win32":
 setup(
     name="rolador de dados ",
     version="0.1",
-    description="rolador de dados",
+    description="dados",
     options={"build_exe": build_exe_options},
     executables=[Executable("dados.py", base=base)]
 )

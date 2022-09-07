@@ -1,5 +1,4 @@
 from PySimpleGUI import PySimpleGUI as sg
-import time
 import random
 #Layout
 
@@ -9,6 +8,7 @@ dados = ['d4', 'd6', 'd8', 'd10', 'd12', 'd20', 'd10%', 'd100']
 layout = [
     [sg.Text('Dados'), sg.Combo(dados, key= str('dado_escolhido'))],
     [sg.Text('quantos dados deseja rolar'), sg.Input(key='ndados', size=('2'))],
+    [sg.Text('Deseja adicionar algum bonus ?'), sg.Input(key='bonus', size=('2'))],
     [sg.Button('rolar')],
     [sg.Output(size=(30, 2))]
 ]
@@ -39,6 +39,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -52,6 +54,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -65,6 +69,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -77,6 +83,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -90,6 +98,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -103,6 +113,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -118,6 +130,8 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
 
 
@@ -132,5 +146,6 @@ while True:
                     if counter != valores['ndados']:
                         counter = counter + 1
                     if counter == valores['ndados'] - 1:
+                        if valores['bonus'] != '':
+                            valor = valor + int(valores['bonus'])
                         print(f'\n{valor}')
-
